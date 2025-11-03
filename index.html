@@ -2,11 +2,284 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
     <title>Mikhail Dmitrenko - Developer</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="logo-link">
+                <img src="assets/logo.png" class="logo" width="80px" alt="Mikhail Dmitrenko">
+            </a>
+            
+            <div class="header__info">
+                <h1 class="header__title">Mikhail Dmitrenko</h1>
+                <p class="header__subtitle">Web Developer</p>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <figure>
+                <img src="assets/portrait2024.jpg" alt="My portrait">
+                <figcaption>Фотография 2024 года</figcaption>
+            </figure>
+            
+            <blockquote>
+                "Код — это поэзия, где точка с запятой заменяет рифму"
+            </blockquote>
+            
+            <button onclick="alert('Welcome to hell')">Нажми меня</button>
+        </section>
+
+        <section class="about">
+            <article>
+                <header>
+                    <h2>Мой путь</h2>
+                </header>
+                
+                <p>Начал с <code>Hello World</code> и закончу <mark>мировым господством</mark>.</p>
+                
+                <pre><code>
+        function isAlive() {
+            return coffee &amp;&amp; code;
+        }
+                </code></pre>
+                
+                <details>
+                    <summary>Скрытые таланты</summary>
+                    <p>Могу написать <abbr title="Cascading Style Sheets">CSS</abbr> с закрытыми глазами</p>
+                </details>
+            </article>
+        </section>
+
+        <aside class="skills">
+            <h3>Технологии</h3>
+            
+            <table class="skills-table">
+                <caption>Мой полный технологический арсенал</caption>
+                <thead>
+                    <tr>
+                        <th>Категория</th>
+                        <th>Технология</th>
+                        <th>Уровень</th>
+                        <th>Опыт</th>
+                        <th>Статус</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- ФРОНТЕНД -->
+                    <tr class="category-frontend">
+                        <td rowspan="6" class="category-name">Frontend</td>
+                        <td class="tech-name"><span class="tech-icon">🌐</span>HTML5</td>
+                        <td><meter value="95" min="0" max="100" title="95%">95%</meter></td>
+                        <td>4 года</td>
+                        <td class="status-master">Мастер</td>
+                    </tr>
+                    <tr class="category-frontend">
+                        <td class="tech-name"><span class="tech-icon">🎨</span>CSS3/SCSS</td>
+                        <td><meter value="88" min="0" max="100" title="88%">88%</meter></td>
+                        <td>4 года</td>
+                        <td class="status-master">Мастер</td>
+                    </tr>
+                    <tr class="category-frontend">
+                        <td class="tech-name"><span class="tech-icon">⚡</span>JavaScript</td>
+                        <td><meter value="85" min="0" max="100" title="85%">85%</meter></td>
+                        <td>3 года</td>
+                        <td class="status-expert">Эксперт</td>
+                    </tr>
+                    <tr class="category-frontend">
+                        <td class="tech-name"><span class="tech-icon">⚛️</span>React</td>
+                        <td><meter value="82" min="0" max="100" title="82%">82%</meter></td>
+                        <td>2 года</td>
+                        <td class="status-expert">Эксперт</td>
+                    </tr>
+                    <tr class="category-frontend">
+                        <td class="tech-name"><span class="tech-icon">▲</span>Next.js</td>
+                        <td><meter value="75" min="0" max="100" title="75%">75%</meter></td>
+                        <td>1.5 года</td>
+                        <td class="status-active">Активно использую</td>
+                    </tr>
+                    <tr class="category-frontend">
+                        <td class="tech-name"><span class="tech-icon">📱</span>React Native</td>
+                        <td><meter value="45" min="0" max="100" title="45%">45%</meter></td>
+                        <td>6 месяцев</td>
+                        <td class="status-learning">Осваиваю</td>
+                    </tr>
+
+                    <!-- БЭКЕНД -->
+                    <tr class="category-backend">
+                        <td rowspan="5" class="category-name">Backend</td>
+                        <td class="tech-name"><span class="tech-icon">🚀</span>Node.js</td>
+                        <td><meter value="75" min="0" max="100" title="75%">75%</meter></td>
+                        <td>2 года</td>
+                        <td class="status-expert">Эксперт</td>
+                    </tr>
+                    <tr class="category-backend">
+                        <td class="tech-name"><span class="tech-icon">🪶</span>Express.js</td>
+                        <td><meter value="80" min="0" max="100" title="80%">80%</meter></td>
+                        <td>2 года</td>
+                        <td class="status-expert">Эксперт</td>
+                    </tr>
+                    <tr class="category-backend">
+                        <td class="tech-name"><span class="tech-icon">🦅</span>NestJS</td>
+                        <td><meter value="70" min="0" max="100" title="70%">70%</meter></td>
+                        <td>1 год</td>
+                        <td class="status-active">Активно использую</td>
+                    </tr>
+                    <tr class="category-backend">
+                        <td class="tech-name"><span class="tech-icon">🍃</span>MongoDB</td>
+                        <td><meter value="65" min="0" max="100" title="65%">65%</meter></td>
+                        <td>1 год</td>
+                        <td class="status-active">Активно использую</td>
+                    </tr>
+                    <tr class="category-backend">
+                        <td class="tech-name"><span class="tech-icon">🗄️</span>PostgreSQL</td>
+                        <td><meter value="70" min="0" max="100" title="70%">70%</meter></td>
+                        <td>1 год</td>
+                        <td class="status-active">Активно использую</td>
+                    </tr>
+
+                    <!-- ИНСТРУМЕНТЫ -->
+                    <tr class="category-tools">
+                        <td rowspan="8" class="category-name">Инструменты</td>
+                        <td class="tech-name"><span class="tech-icon">🔷</span>TypeScript</td>
+                        <td><meter value="78" min="0" max="100" title="78%">78%</meter></td>
+                        <td>2 года</td>
+                        <td class="status-expert">Эксперт</td>
+                    </tr>
+                    <tr class="category-tools">
+                        <td class="tech-name"><span class="tech-icon">📦</span>Git</td>
+                        <td><meter value="85" min="0" max="100" title="85%">85%</meter></td>
+                        <td>3 года</td>
+                        <td class="status-expert">Эксперт</td>
+                    </tr>
+                    <tr class="category-tools">
+                        <td class="tech-name"><span class="tech-icon">🔁</span>CI/CD</td>
+                        <td><meter value="60" min="0" max="100" title="60%">60%</meter></td>
+                        <td>1 год</td>
+                        <td class="status-active">Активно использую</td>
+                    </tr>
+                    <tr class="category-tools">
+                        <td class="tech-name"><span class="tech-icon">🐳</span>Docker</td>
+                        <td><meter value="55" min="0" max="100" title="55%">55%</meter></td>
+                        <td>8 месяцев</td>
+                        <td class="status-learning">Осваиваю</td>
+                    </tr>
+                    <tr class="category-tools">
+                        <td class="tech-name"><span class="tech-icon">🖥️</span>Linux/Ubuntu</td>
+                        <td><meter value="70" min="0" max="100" title="70%">70%</meter></td>
+                        <td>2 года</td>
+                        <td class="status-active">Активно использую</td>
+                    </tr>
+                    <tr class="category-tools">
+                        <td class="tech-name"><span class="tech-icon">🏗️</span>Архитектура</td>
+                        <td><meter value="65" min="0" max="100" title="65%">65%</meter></td>
+                        <td>1.5 года</td>
+                        <td class="status-learning">Изучаю</td>
+                    </tr>
+                    <tr class="category-tools">
+                        <td class="tech-name"><span class="tech-icon">🛠️</span>Webpack/Vite</td>
+                        <td><meter value="60" min="0" max="100" title="60%">60%</meter></td>
+                        <td>1 год</td>
+                        <td class="status-active">Активно использую</td>
+                    </tr>
+                    <tr class="category-tools">
+                        <td class="tech-name"><span class="tech-icon">⚙️</span>TypeORM/Prisma</td>
+                        <td><meter value="50" min="0" max="100" title="50%">50%</meter></td>
+                        <td>6 месяцев</td>
+                        <td class="status-learning">Осваиваю</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+
+        <section class="contact">
+            <h2>Контакты</h2>
+            <div class="contact-container">
+                <address>
+                    <p>Свяжитесь со мной:</p>
+                    <a href="mailto:mishadmitrenko04@gmail.com" class="contact-text">Email</a>
+                    <a href="tel:+79962112744" class="contact-text">Телефон</a>
+                </address>
+
+                <form class="contact-form" method="POST" action="#">
+                    <fieldset>
+                        <legend>Напишите мне</legend>
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">Имя *</label>
+                            <input type="text" id="name" name="name" required 
+                                placeholder="Ваше имя" class="form-input">
+                            <span class="form-hint">Минимум 2 символа</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" required
+                                placeholder="your@email.com" class="form-input">
+                            <span class="form-hint">На этот адрес придёт ответ</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message-type" class="form-label">Тип сообщения</label>
+                            <select id="message-type" name="message-type" class="form-select">
+                                <option value="" disabled selected>Выберите тип</option>
+                                <option value="question">Вопрос</option>
+                                <option value="offer">Предложение</option>
+                                <option value="cooperation">Сотрудничество</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Сообщение *</label>
+                            <textarea id="message" name="message" required
+                                    placeholder="Опишите вашу задачу..." 
+                                    rows="5" class="form-textarea"></textarea>
+                            <span class="form-counter"><span id="char-count">0</span>/500</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" name="agreement" required>
+                                <span class="checkmark"></span>
+                                Я согласен на обработку персональных данных
+                            </label>
+                        </div>
+
+                        <div class="form-group form-submit-btn">
+                            <button type="submit" class="form-submit">
+                            <span class="submit-text">Отправить сообщение</span>
+                            <span class="submit-loader">⏳</span>
+                        </button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p>&copy; 2024 Mikhail Dmitrenko.<br>Все права защищены, особенно на ошибки.</p>
+            <nav class="footer__nav">
+                <ul class="footer__links">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Условия использования</a></li>
+                    <li><a href="#top">Наверх ↑</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
